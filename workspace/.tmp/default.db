@@ -1,0 +1,185 @@
+{
+  "data": {
+    "error": [
+      {
+        "status": "new",
+        "location": "asdfasdf",
+        "description": "asdfasdf",
+        "date": "2015-11-20T18:05:47.502Z",
+        "createdAt": "2015-11-20T18:05:47.503Z",
+        "updatedAt": "2015-11-20T18:05:47.503Z",
+        "id": 1
+      },
+      {
+        "status": "new",
+        "location": "Lovi",
+        "description": "asdf",
+        "date": "2015-11-21T10:37:08.206Z",
+        "createdAt": "2015-11-21T10:37:08.209Z",
+        "updatedAt": "2015-11-21T10:37:08.209Z",
+        "id": 2
+      },
+      {
+        "status": "new",
+        "location": "asd",
+        "description": "asdasd",
+        "date": "2015-11-21T10:51:57.958Z",
+        "createdAt": "2015-11-21T10:51:57.961Z",
+        "updatedAt": "2015-11-21T10:51:57.961Z",
+        "id": 3
+      }
+    ],
+    "animal": [
+      {
+        "status": "sick",
+        "name": "Picúrka",
+        "kenel": "145",
+        "date": "2015-11-21T11:50:57.558Z",
+        "createdAt": "2015-11-21T11:50:57.560Z",
+        "updatedAt": "2015-11-21T15:14:18.009Z",
+        "id": 1
+      }
+    ],
+    "user": [
+      {
+        "surname": "asd",
+        "forename": "asd",
+        "neptun": "asd",
+        "password": "$2a$10$IYalvRay0domccHdAJRM7.GpRtf19qYmfKXi/mage8/H5Sp4dLB8i",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-20T18:05:37.697Z",
+        "updatedAt": "2015-11-20T18:05:37.698Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "error": {
+      "date": {
+        "type": "datetime"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "assigned",
+          "success",
+          "rejected",
+          "pending"
+        ]
+      },
+      "location": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "animal": {
+      "date": {
+        "type": "datetime"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "sick",
+          "adoptable",
+          "adopted"
+        ]
+      },
+      "name": {
+        "type": "string"
+      },
+      "kenel": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "neptun": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "surname": {
+        "type": "string"
+      },
+      "forename": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "riporter",
+          "operator"
+        ],
+        "defaultsTo": "riporter"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "error": {
+      "id": 3
+    },
+    "user": {
+      "id": 1
+    },
+    "animal": {
+      "id": 3
+    }
+  }
+}

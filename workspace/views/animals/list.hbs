@@ -1,0 +1,36 @@
+
+{{#each messages}}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Általam gondozott állatok</h1>
+</div>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Időpont</th>
+            <th>Státusz</th>
+            <th>Név</th>
+            <th>Kenelszám</th>
+        </tr>   
+    </thead>
+    <tbody>
+        {{#each animals}}
+        <tr>
+            <td>{{date}}</td>
+            <td><span class="label label-{{statusClass}}">{{statusText}}</span></td>
+            <td>{{name}}</td>
+            <td><span class="badge">{{numberOfMessages}}</span> {{kenel}}</td>
+            <td><a href="/animals/edit/{{name}}" class="list-group-item">Módosítás</a></td>
+            <td><a href="/animals/remove/{{name}}" class="list-group-item">Törlés</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<p><a href="/animals/new" class="btn btn-default">Új állat felvitele</a></p>

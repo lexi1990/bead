@@ -1,0 +1,69 @@
+
+<div class="page-header">
+    <h1>{{animal.name}} módosítása</h1>
+</div>
+
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group
+            {{#if validationErrors.nev}}
+                has-error
+            {{/if}}
+        ">
+            <label for="nev" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="nev" name="nev" type="text" value="{{animal.name}}">
+                {{#if validationErrors.nev}}
+                    <span class="help-block">{{validationErrors.nev.msg}}</span>
+                {{/if}}
+            </div>
+        </div>
+        
+        
+        <div class="form-group
+            {{#if validationErrors.status}}
+                has-error
+            {{/if}}
+        ">
+            <label for="status" class="col-lg-2 control-label">Státusz</label>
+            <div class="col-lg-10">
+                <select name= "status" class="form-control" id="status">
+                    <option value="new">Újonnan érkezett</option>
+                    <option value="sick">Kezelésre szorul</option>
+                    <option value="adoptable">Gazdira vár</option>
+                    <option value="adopted">Gazdis</option>
+                </select>
+                {{#if validationErrors.status}}
+                    <span class="help-block">{{validationErrors.status.msg}}</span>
+                {{/if}}
+            </div>
+            <script>
+                document.getElementById("status").value = "{{animal.status}}";
+            </script>
+        </div>
+        
+        
+        
+        
+        <div class="form-group
+            {{#if validationErrors.kenelszam}}
+                has-error
+            {{/if}}
+        ">
+            <label for="kenelszam" class="col-lg-2 control-label">Kenelszám</label>
+            <div class="col-lg-10">
+                <input class="form-control" rows="3" id="kenelszam" name="kenelszam" type="number" value={{animal.kenel}}>
+                {{#if validationErrors.kenelszam}}
+                    <span class="help-block">{{validationErrors.kenelszam.msg}}</span>
+                {{/if}}
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Clear</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
