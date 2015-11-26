@@ -92,7 +92,7 @@
     - node_modules: node js-hez telepített modulok
     - public
    
-    ![Teszt](workspace/img/9.jpg)
+
 	
 
 ##Tesztelés
@@ -103,3 +103,5 @@
 
 
 	![Teszt](workspace/img/9.jpg)
+
+    ![Teszt](workspace/img/9.jpg)
