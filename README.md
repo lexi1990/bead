@@ -92,13 +92,13 @@
     - views: az egyes oldalak kinézetét adja meg
     - node_modules: node js-hez telepített modulok
     - public
- ##Tesztelés
+ 
+##Tesztelés
 
 	- A tesztelést Windows 8.1 operációs rendszeren, Mozilla Firefox 41.0.2-ben végeztem, Selenium IDE használatával
 	- Hozzáadtam a listához egy új állatot, státuszát módosítottam, majd töröltem
-	- A teszt az alábbi eredménnyel zárult
+	- A teszt az alábbi eredménnyel zárult:
 
 
 	![Teszt](workspace/img/9.jpg)
 
-    ![Teszt](workspace/img/9.jpg)
