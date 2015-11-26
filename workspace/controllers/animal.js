@@ -61,7 +61,7 @@ router.post('/new', function(req, res) {
 })
 
 
-
+//Állatok szerkesztése
 router.get('/edit/:name', function(req, res) {
     var name = req.params.name;
     
@@ -108,6 +108,7 @@ router.post('/edit/:name', function(req, res) {
 });
 
 
+//Állatok törlése
 router.get('/remove/:name', function(req, res) {
     var name = req.params.name;
     

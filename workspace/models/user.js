@@ -5,7 +5,7 @@ module.exports = {
     identity: 'user',
     connection: 'default',
     attributes: {
-        neptun: {
+        azon: {
             type: 'string',
             required: true,
             unique: true,
@@ -23,8 +23,8 @@ module.exports = {
             required: true,
         },
         avatar: {
-            type: 'string',
-            url: true,
+           type: 'string',
+           url: true,
         },
         role: {
             type: 'string',
@@ -38,9 +38,6 @@ module.exports = {
             via: 'user'
         },
         
-        //validPassword: function (password) {
-        //    return password === this.password;
-        //}
         validPassword: function (password) {
             return bcrypt.compareSync(password, this.password);
         }

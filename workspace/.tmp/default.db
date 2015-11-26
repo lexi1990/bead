@@ -31,13 +31,31 @@
     ],
     "animal": [
       {
-        "status": "sick",
+        "status": "new",
         "name": "Picúrka",
         "kenel": "145",
         "date": "2015-11-21T11:50:57.558Z",
         "createdAt": "2015-11-21T11:50:57.560Z",
-        "updatedAt": "2015-11-21T15:14:18.009Z",
+        "updatedAt": "2015-11-25T02:39:19.834Z",
         "id": 1
+      },
+      {
+        "status": "adopted",
+        "name": "Manó",
+        "kenel": "597",
+        "date": "2015-11-24T21:55:04.222Z",
+        "createdAt": "2015-11-24T21:55:04.224Z",
+        "updatedAt": "2015-11-24T23:24:15.586Z",
+        "id": 5
+      },
+      {
+        "status": "new",
+        "name": "Fifi",
+        "kenel": "32",
+        "date": "2015-11-24T22:53:54.527Z",
+        "createdAt": "2015-11-24T22:53:54.528Z",
+        "updatedAt": "2015-11-24T22:53:54.528Z",
+        "id": 6
       }
     ],
     "user": [
@@ -51,6 +69,50 @@
         "createdAt": "2015-11-20T18:05:37.697Z",
         "updatedAt": "2015-11-20T18:05:37.698Z",
         "id": 1
+      },
+      {
+        "surname": "asdf",
+        "forename": "asdf",
+        "azon": "asdf",
+        "password": "$2a$10$FzKjbgMqhdusiM6jUt.TduS1SOqkYq5QzL4gxgnCx2oSJ5WQMYi6y",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T01:33:57.257Z",
+        "updatedAt": "2015-11-26T01:33:57.257Z",
+        "id": 2
+      },
+      {
+        "surname": "qwe",
+        "forename": "qwe",
+        "azon": "qwe",
+        "password": "$2a$10$HWRh3sKKpp0hkr5E7bW50eb4A9sSKw5JU2a1b/xU8b6.UkORhx10K",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T01:36:35.066Z",
+        "updatedAt": "2015-11-26T01:36:35.066Z",
+        "id": 3
+      },
+      {
+        "surname": "dsa",
+        "forename": "dsa",
+        "azon": "dsa",
+        "password": "$2a$10$OG/mhjcbF8cWk0HSbLVrPe2.KSe/M6UxGXuDmuy9KDAJVsNcwXrIy",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T01:40:44.513Z",
+        "updatedAt": "2015-11-26T01:40:44.513Z",
+        "id": 4
+      },
+      {
+        "surname": "123",
+        "forename": "123",
+        "azon": "123",
+        "password": "$2a$10$gwShGxkFgf4y2dcCeFtEmOIdmqcBCbadD1IvhXUeamRDrXJcsSHgm",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T01:45:35.829Z",
+        "updatedAt": "2015-11-26T01:45:35.829Z",
+        "id": 5
       }
     ]
   },
@@ -133,7 +195,7 @@
       }
     },
     "user": {
-      "neptun": {
+      "azon": {
         "type": "string",
         "unique": true
       },
@@ -176,10 +238,10 @@
       "id": 3
     },
     "user": {
-      "id": 1
+      "id": 5
     },
     "animal": {
-      "id": 3
+      "id": 8
     }
   }
 }
