@@ -63,8 +63,8 @@
     
     ![Kezdőlap](workspace/img/1.jpg)
     ![Regisztárció](workspace/img/3.jpg)
-    ![Listázás](workspace/img/6.jpg)
-    ![Módosítás](workspace/img/7.jpg)
+    ![Listázás](workspace/img/4.jpg)
+    ![Módosítás](workspace/img/6.jpg)
 
 4. Osztálymodell
     - Adatmodell
@@ -100,4 +100,4 @@
 	- A teszt az alábbi eredménnyel zárult:
 
 
-	![Teszt](public/selenium_test.png)
+	![Teszt](workspace/img/9.jpg)
