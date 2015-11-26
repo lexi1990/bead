@@ -80,6 +80,7 @@
         ![Állapotdiagram](workspace/img/10.jpg)
 
 ##Implementáció
+
 1. Fejlesztői környezet bemutatása
     Cloud9 webes IDE, új workspace létrehozása után feltelepítetjük a szükséges modulokat. A Cloud9 segítségével egy fájlt tudunk futtatni webes terminálablakból.
     
@@ -90,15 +91,7 @@
     - viewmodels: nézetmodel 
     - views: az egyes oldalak kinézetét adja meg
     - node_modules: node js-hez telepített modulok
-    - public
- 
-
-##Tesztelés
-    - A tesztelést Windows 8.1 opreációs rendszeren, Mozilla
-
-	
-
-##Tesztelés
+    - public##Tesztelés
 
 	- A tesztelést Windows 8.1 operációs rendszeren, Mozilla Firefox 41.0.2-ben végeztem, Selenium IDE használatával
 	- Hozzáadtam a listához egy új állatot, státuszát módosítottam, majd töröltem
