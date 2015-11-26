@@ -92,8 +92,6 @@
     - views: az egyes oldalak kinézetét adja meg
     - node_modules: node js-hez telepített modulok
     - public
-
-
 ##Tesztelés
 
 	- A tesztelést Windows 8.1 operációs rendszeren, Mozilla Firefox 41.0.2-ben végeztem, Selenium IDE használatával
