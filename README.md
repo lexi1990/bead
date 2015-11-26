@@ -91,6 +91,8 @@
     - views: az egyes oldalak kinézetét adja meg
     - node_modules: node js-hez telepített modulok
     - public
+   
+    ![Teszt](workspace/img/9.jpg)
 	
 
 ##Tesztelés
